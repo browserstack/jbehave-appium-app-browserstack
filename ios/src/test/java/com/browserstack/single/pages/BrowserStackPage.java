@@ -22,11 +22,6 @@ public class BrowserStackPage {
         textButton.click();
     }
 
-    public Integer searchResultsShouldBeListed() {
-        List<WebElement> allProductsName = driver.findElements(AppiumBy.className("android.widget.TextView"));
-        return allProductsName.size();
-    }
-
     public void enterInputInTextInputField(String textInput) {
         WebElement textInputField = (WebElement) new WebDriverWait(driver, Duration.ofSeconds(30)).until(
                 ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Text Input")));
