@@ -17,6 +17,10 @@ This repository demonstrates how to run Appium tests in [JBehave](https://github
    - If Maven is not downloaded, download it from [here](https://maven.apache.org/download.cgi)
    - For installation, follow the instructions [here](https://maven.apache.org/install.html)
 
+3. Gradle
+  - If Gradle is not downloaded, download it from [here](https://gradle.org/releases/)  
+  - For installation, follow the instructions [here](https://gradle.org/install/) 
+
 ### Install the dependencies
 
 To install the dependencies for Android tests, run :
@@ -41,7 +45,8 @@ Getting Started with Appium tests in JBehave on BrowserStack couldn't be easier!
 ### **Run Sample test :**
 
 - Switch to one of the following directories: [Android examples](android) or [iOS examples](ios)
-- Run the following maven command `mvn test -P sample-test`
+- Run the following maven command `mvn test -P sample-test` to run in maven enviroment.
+- Run the following gradle command `gradle clean sampleTest` to run in gradle enviroment.
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
